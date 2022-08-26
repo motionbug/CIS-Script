@@ -3,12 +3,12 @@
 script_dir=$(dirname ${0:A})
 projectfolder=$(dirname $script_dir)
 
-jamfpro_user="torq"
-jamfpro_password="oiCTjT!m2MqUit9YddJ"
+jamfpro_user=""
+jamfpro_password=""
 
 # Get JSS URL from Jamf Pro prefrences
 #jamfpro_url=$(defaults read /Library/Preferences/com.jamfsoftware.jamf.plist jss_url)
-jamfpro_url="https://emeia.jamfce.com/"
+jamfpro_url=""
 
 # CHECK TO SEE IF A VALUE WAS PASSED IN PARAMETER 4 AND, IF SO, ASSIGN TO "password"
 if [[ "$4" != "" ]] && [[ "$jamfpro_user" == "" ]]; then
